@@ -1,9 +1,7 @@
 import ollama
-import sys
 import json
+from .utils import OLLAMA_MODEL
 
-# This MUST match the model you pulled with 'ollama pull'
-OLLAMA_MODEL = "llama3:instruct"
 
 # --- Main System Prompt (for Analysis) ---
 SYSTEM_PROMPT = """You are an expert software engineer specializing in bug detection and resolution. 
@@ -54,7 +52,7 @@ def classify_issue_type(issue_data: dict) -> str:
         return "UNKNOWN"
 
 
-# --- STEP 2: ANALYSIS FUNCTIONS (Modified) ---
+# --- STEP 2: ANALYSIS FUNCTIONS ---
 
 def build_analysis_prompt(issue_title: str, issue_body: str, issue_comments: list, relevant_files: dict) -> str:
     """
@@ -73,7 +71,6 @@ def build_analysis_prompt(issue_title: str, issue_body: str, issue_comments: lis
         [f"- {c['user']}: {c['body']}" for c in issue_comments]
     ) if issue_comments else "No comments."
 
-    # This prompt is now simpler, as it *assumes* it's a bug.
     prompt = f"""
 **GitHub Issue Analysis Task**
 
@@ -139,7 +136,6 @@ def generate_analysis(issue_data: dict, code_context: dict) -> str:
         
         response_text = response['message']['content']
         
-        # Parse the <ANALYSIS> block
         start_tag = "<ANALYSIS>"
         end_tag = "</ANALYSIS>"
         start_index = response_text.find(start_tag)
@@ -158,7 +154,6 @@ def generate_analysis(issue_data: dict, code_context: dict) -> str:
         print(f"Error during Ollama analysis generation: {e}")
         raise
 
-# --- (check_ollama_model function remains unchanged) ---
 def check_ollama_model():
     """
     Checks if the required Ollama model is available locally.
@@ -176,7 +171,7 @@ def check_ollama_model():
                 print(f"Checking model: {model_object.model}")
                 if model_object.model.startswith(OLLAMA_MODEL):
                     print(f"Success: Found matching model '{model_object.model}'.")
-                    return True # Found it
+                    return True
             else:
                 print(f"Warning: Found a model entry with no '.model' attribute: {model_object}")
         print(f"Error: Model '{OLLAMA_MODEL}' not found in the list.")

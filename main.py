@@ -168,7 +168,7 @@ def main():
     parser.add_argument(
         "--max-issues",
         type=int,
-        default=20, # Default to scanning 20 issues
+        default=40,
         help="The maximum number of open issues to scan."
     )
     

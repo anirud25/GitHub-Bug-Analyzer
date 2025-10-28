@@ -90,7 +90,7 @@ def find_relevant_code(issue_text: str, retriever) -> dict:
     Accepts a retriever object to avoid reloading.
     """
     print("Finding relevant code context...")
-    # The retriever is now passed in, not created here
+    
     relevant_docs = retriever.invoke(issue_text)
     
     context_by_file = {}

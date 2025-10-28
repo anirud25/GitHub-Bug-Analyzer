@@ -1,7 +1,7 @@
 import os
 import re
 import shutil
-import stat  # <-- Import stat for changing file permissions
+import stat  
 from contextlib import contextmanager
 
 # --- Constants ---
@@ -10,8 +10,8 @@ VECTOR_STORE_DIR = "vector_store"
 # Using a fast, reliable, and small embedding model
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
-# (Ollama model name, if you're using it)
-LLM_MODEL = "codellama:7b-instruct"
+# Ollama model name, This MUST match the model you pulled with 'ollama pull'
+OLLAMA_MODEL = "llama3:instruct"
 
 
 # --- Functions ---
