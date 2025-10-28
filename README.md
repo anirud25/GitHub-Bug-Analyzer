@@ -27,8 +27,12 @@ This project is an AI-powered system that analyzes GitHub issues, finds root cau
 
 2.  **Create a Virtual Environment:**
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows: venv\Scripts\activate
+    OR
+
+    .venc/Scripts/activate
+
     ```
 
 3.  **Install Dependencies:**
@@ -68,6 +72,6 @@ This example uses the repository from the prompt. Note: The issues #1 and #2 men
 Let's find a real, simple, closed issue on that repo. For example, Issue #213 ("Fix typo in agent.js").
 
 ```bash
-python main.py [https://github.com/gothinkster/realworld-react-redux](https://github.com/gothinkster/realworld-react-redux) 213
+python main.py [https://github.com/gothinkster/realworld](https://github.com/gothinkster/realworld) 1647
 ```
 
