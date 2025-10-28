@@ -41,10 +41,10 @@ The final output is a comprehensive Markdown report that includes:
 
 -  Python 3.10.9
 
--  Ollama (v0.12.6): For serving the local LLM. <img height="25" alt="Ollama Logo" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />
+-  Ollama (v0.12.6) <img height="25" width = "25" alt="Ollama Logo" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />: For serving the local LLM. 
 
 
--  AI Model: `llama3:instruct`. <img height="25" alt="Llama 3 Logo" src="https://github.com/user-attachments/assets/0981aa84-cb94-48c0-a715-89650d5ba7ed" />
+-  Llama3 Model: `llama3:instruct` <img height="25" width="25" alt="Llama 3 Logo" src="https://github.com/user-attachments/assets/0981aa84-cb94-48c0-a715-89650d5ba7ed" />. 
 
 
 -  Embedding Model :  `sentence-transformers/all-MiniLM-L6-v2` .
@@ -214,9 +214,9 @@ Here is an example of a single bug analysis as it would appear in the final summ
 
 - **5. Test Cases to Prevent Regression**:
 
-- Send a PUT request with a null `password` field. Verify that an error response with a 422 status code is returned.
+    - Send a PUT request with a null `password` field. Verify that an error response with a 422 status code is returned.
 
-- Send a PUT request with a non-null `password` field. Verify that the `password` is correctly updated in the database.
+    - Send a PUT request with a non-null `password` field. Verify that the `password` is correctly updated in the database.
 
 - **6. Potential Side Effects**:
-- None expected. This fix only affects the validation of the password field in the Update User endpoint.
+    - None expected. This fix only affects the validation of the password field in the Update User endpoint.
