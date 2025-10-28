@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a small script that runs PyInstaller
+#  Get src/push-to-PyPI.sh from git@github.com:pyinstaller/pyinstaller.git
+*.spec
+.cache/
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Workspace for cloned repos
+workspace/
+vector_store/
+
+# IDE / Editor files
+.idea/
+.vscode/
+*.swp
+*~
