@@ -1,4 +1,4 @@
-# RAG-based GitHub Bug Analyzer AI using LLama3
+<img width="992" height="404" alt="image" src="https://github.com/user-attachments/assets/ab8dbe1d-60b6-4c1f-badf-09c0c55b1b89" /># RAG-based GitHub Bug Analyzer AI using LLama3
 
 This is an AI-powered system, built using Ollama, that automatically scans an entire GitHub repository, analyzes all open issues, and generates detailed bug reports for those it identifies as "bugs."
 
@@ -41,10 +41,10 @@ The final output is a comprehensive Markdown report that includes:
 
 -  Python 3.10.9
 
--  Ollama (v0.12.6) <img alt="Ollama Logo" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />: For serving the local LLM. 
+-  Ollama (v0.12.6) <img alt="Ollama Logo" height="50" width="50" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />: For serving the local LLM. 
 
 
--  Llama3 Model: `llama3:instruct` <img alt="Llama 3 Logo" src="https://github.com/user-attachments/assets/580a2f93-1aaa-4373-8c41-fb4c3c973183" />. 
+-  Llama3 Model: `llama3:instruct` <img alt="Llama 3 Logo" height="50" width="50" src="https://github.com/user-attachments/assets/580a2f93-1aaa-4373-8c41-fb4c3c973183" />. 
 
 
 -  Embedding Model :  `sentence-transformers/all-MiniLM-L6-v2` .
