@@ -4,8 +4,6 @@ This is an AI-powered system, built using Ollama, that automatically scans an en
 
 It uses a sophisticated 2-step AI chain with Retrieval-Augmented Generation (RAG) to provide high-quality, code-aware analysis. Instead of just analyzing one issue, it scans the entire repository and compiles a single, summarized Markdown report, using a powerful open-source Code LLM, LLama3.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/LangChain_Logo.svg" alt="LangChain Logo" height="25">
-
 ## Features
 
 -   **GitHub Integration**: Fetches issue details (title, body, comments) directly from a repository.
@@ -43,13 +41,15 @@ The final output is a comprehensive Markdown report that includes:
 
 -  Python 3.10.9
 
--  Ollama (v0.12.6): For serving the local LLM.
+-  Ollama (v0.12.6): For serving the local LLM. <img height="25" alt="Ollama Logo" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />
 
--  AI Model: `llama3:instruct`.
+
+-  AI Model: `llama3:instruct`. <img height="25" alt="Llama 3 Logo" src="https://github.com/user-attachments/assets/0981aa84-cb94-48c0-a715-89650d5ba7ed" />
+
 
 -  Embedding Model :  `sentence-transformers/all-MiniLM-L6-v2` .
 
--  LangChain (1.0.2): For orchestrating the RAG pipeline and LLM chains.
+-  LangChain (1.0.2): For orchestrating the RAG pipeline and LLM chains. <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/LangChain_Logo.svg" alt="LangChain Logo" height="25">
 
 -  langchain-community (0.4)
 
