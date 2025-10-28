@@ -44,7 +44,7 @@ The final output is a comprehensive Markdown report that includes:
 -  Ollama (v0.12.6) <img height="25" width = "25" alt="Ollama Logo" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />: For serving the local LLM. 
 
 
--  Llama3 Model: `llama3:instruct` <img height="25" width="25" alt="Llama 3 Logo" src="https://github.com/user-attachments/assets/0981aa84-cb94-48c0-a715-89650d5ba7ed" />. 
+-  Llama3 Model: `llama3:instruct` <img height="25" width="25" alt="Llama 3 Logo" src="https://github.com/user-attachments/assets/580a2f93-1aaa-4373-8c41-fb4c3c973183" />. 
 
 
 -  Embedding Model :  `sentence-transformers/all-MiniLM-L6-v2` .
