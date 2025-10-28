@@ -41,7 +41,7 @@ The final output is a comprehensive Markdown report that includes:
 
 -  Python 3.10.9
 
--  Ollama (v0.12.6) <img alt="Ollama Logo" height="50" width="50" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />: For serving the local LLM. 
+-  Ollama (v0.12.6) <img alt="Ollama Logo" height="25" width="25" src="https://github.com/user-attachments/assets/ecd82f38-2d98-4d62-945b-d3a194e99133" />: For serving the local LLM. 
 
 
 -  Llama3 Model: `llama3:instruct` <img alt="Llama 3 Logo" height="50" width="50" src="https://github.com/user-attachments/assets/580a2f93-1aaa-4373-8c41-fb4c3c973183" />. 
