@@ -1,4 +1,4 @@
-<img width="992" height="404" alt="image" src="https://github.com/user-attachments/assets/ab8dbe1d-60b6-4c1f-badf-09c0c55b1b89" /># RAG-based GitHub Bug Analyzer AI using LLama3
+# RAG-based GitHub Bug Analyzer AI using LLama3 🐞 🦙 
 
 This is an AI-powered system, built using Ollama, that automatically scans an entire GitHub repository, analyzes all open issues, and generates detailed bug reports for those it identifies as "bugs."
 
